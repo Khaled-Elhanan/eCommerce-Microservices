@@ -1,4 +1,5 @@
-﻿using eCommerce.Core.DTO;
+﻿using AutoMapper;
+using eCommerce.Core.DTO;
 using eCommerce.Core.Entities;
 using eCommerce.Core.RepositoryContracts;
 using eCommerce.Core.ServiceContracts;
@@ -8,9 +9,11 @@ namespace eCommerce.Infrastructure.Services
     public class UserService : IUsersService
     {
         private readonly IUserRepository _userRepository;
-        public UserService(IUserRepository userRepository)
+        private readonly IMapper _mapper;
+        public UserService(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
         }
         public async Task<AuthenticationResponse?> Login(LoginRequest loginRequest)
         {
@@ -24,8 +27,8 @@ namespace eCommerce.Infrastructure.Services
             if (user == null)
                 return null;
 
-            return new AuthenticationResponse
-            (user.UserID, user.Email, user.PersonName, user.Gender, "Token", Success:true);
+            return _mapper.Map<AuthenticationResponse>(user) with { Success = true, Token = "token" };
+
         }
 
         public async Task<AuthenticationResponse?> Register(RegisterRequest registerRequest)
@@ -37,20 +40,25 @@ namespace eCommerce.Infrastructure.Services
                 return null;
             }
 
-            ApplicationUser user = new ApplicationUser()
-            {
-                PersonName = registerRequest.PersonName,
-                Password = registerRequest.Password,
-                Email = registerRequest.Email,
-                Gender = registerRequest.Gender.ToString(),
-            };
-            ApplicationUser? registeredUser = await _userRepository.AddUser(user);
+            ApplicationUser user = _mapper.Map<ApplicationUser>(registerRequest);
+            ApplicationUser? createdUser = await _userRepository.AddUser(user);
+            
+            //ApplicationUser user = new ApplicationUser()
+            //{
+            //    PersonName = registerRequest.PersonName,
+            //    Password = registerRequest.Password,
+            //    Email = registerRequest.Email,
+            //    Gender = registerRequest.Gender.ToString(),
+            //};
+            //ApplicationUser? registeredUser = await _userRepository.AddUser(user);
 
-            if(registeredUser == null)
+            if (createdUser == null)
                 return null;
 
-            return new AuthenticationResponse(registeredUser.UserID, registeredUser.Email, registeredUser.PersonName, registeredUser.Gender,
-                "Token", Success: true);
+            return _mapper.Map<AuthenticationResponse>(createdUser);
+
+            //return new AuthenticationResponse(registeredUser.UserID, registeredUser.Email, registeredUser.PersonName, registeredUser.Gender,
+            //    "Token", Success: true);
 
         }
     }
