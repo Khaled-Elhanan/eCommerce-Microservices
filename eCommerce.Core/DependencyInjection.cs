@@ -1,4 +1,3 @@
-﻿using eCommerce.Core.ServiceContracts;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace eCommerce.Core
@@ -7,7 +6,6 @@ namespace eCommerce.Core
     {
         public static IServiceCollection AddCore(this IServiceCollection services)
         {
-            services.AddTransient<IUsersService, IUsersService>();
             return services;
         }
     }

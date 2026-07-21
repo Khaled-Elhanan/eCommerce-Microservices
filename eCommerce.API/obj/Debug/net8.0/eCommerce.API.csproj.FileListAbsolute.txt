@@ -22,9 +22,16 @@ C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Deb
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\swae.build.ex.cache
-C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\eCommerce.API.dll
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\refint\eCommerce.API.dll
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\eCommerce.API.pdb
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\eCommerce.API.genruntimeconfig.cache
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\ref\eCommerce.API.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\eCommerce.Core.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\eCommerce.Infrastructure.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\eCommerce.Infrastructure.pdb
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\eCommerce.Core.pdb
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\eCommerce.API.csproj.AssemblyReference.cache
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\eCommerc.1EFE0F2B.Up2Date
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

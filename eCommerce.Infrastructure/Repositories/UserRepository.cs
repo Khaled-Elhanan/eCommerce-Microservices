@@ -6,16 +6,15 @@ namespace eCommerce.Infrastructure.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        public async Task<ApplicationUser?> AddUser(ApplicationUser user)
+        public Task<ApplicationUser?> AddUser(ApplicationUser user)
         {
-          
             user.UserID = Guid.NewGuid();   
-            return user;
+            return Task.FromResult<ApplicationUser?>(user);
         }
 
-        public async Task<ApplicationUser?> GetUserByEmailAndPassword(string email, string password)
+        public Task<ApplicationUser?> GetUserByEmailAndPassword(string email, string password)
         {
-            return new ApplicationUser
+            ApplicationUser user = new ApplicationUser
             {
                 UserID = Guid.NewGuid(),
                 Email = email,
@@ -23,6 +22,8 @@ namespace eCommerce.Infrastructure.Repositories
                 PersonName = "Jans celine",
                 Gender = GenderOptions.Male.ToString()
             };
+
+            return Task.FromResult<ApplicationUser?>(user);
         }
     }
 }

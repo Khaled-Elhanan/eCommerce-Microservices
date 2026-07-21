@@ -14,7 +14,13 @@ namespace eCommerce.Infrastructure.Services
         }
         public async Task<AuthenticationResponse?> Login(LoginRequest loginRequest)
         {
-            ApplicationUser? user = await _userRepository.GetUserByEmailAndPassword(loginRequest.Email , loginRequest.Password);
+            if (string.IsNullOrWhiteSpace(loginRequest.Email) ||
+                string.IsNullOrWhiteSpace(loginRequest.Password))
+            {
+                return null;
+            }
+
+            ApplicationUser? user = await _userRepository.GetUserByEmailAndPassword(loginRequest.Email, loginRequest.Password);
             if (user == null)
                 return null;
 
@@ -24,16 +30,21 @@ namespace eCommerce.Infrastructure.Services
 
         public async Task<AuthenticationResponse?> Register(RegisterRequest registerRequest)
         {
+            if (string.IsNullOrWhiteSpace(registerRequest.Email) ||
+                string.IsNullOrWhiteSpace(registerRequest.Password) ||
+                string.IsNullOrWhiteSpace(registerRequest.PersonName))
+            {
+                return null;
+            }
 
             ApplicationUser user = new ApplicationUser()
             {
-                PersonName = registerRequest.Email,
+                PersonName = registerRequest.PersonName,
                 Password = registerRequest.Password,
                 Email = registerRequest.Email,
                 Gender = registerRequest.Gender.ToString(),
             };
-            ApplicationUser ? registeredUser = await _userRepository.AddUser(user);
-            _userRepository.AddUser(user);
+            ApplicationUser? registeredUser = await _userRepository.AddUser(user);
 
             if(registeredUser == null)
                 return null;
