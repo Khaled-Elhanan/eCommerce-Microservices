@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uNWTjgJ2284=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\khald\\source\\repos\\eCommerce.Solution.UserService\\eCommerce.API\\eCommerce.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\khald\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.10\\microsoft.extensions.dependencyinjection.abstractions.10.0.10.nupkg.sha512",
+    "C:\\Users\\khald\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512"
+  ],
+  "logs": []
+}
