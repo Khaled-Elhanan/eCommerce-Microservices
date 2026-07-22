@@ -57,11 +57,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[16.2.0, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[13.0.1, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -140,7 +136,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[16.2.0, )"
+              "version": "[13.0.1, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
@@ -218,9 +214,21 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.79, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.10, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[10.0.10, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[10.0.3, )"
             }
           },
           "imports": [

@@ -34,4 +34,9 @@ C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Deb
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\eCommerce.Core.pdb
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\eCommerce.API.csproj.AssemblyReference.cache
 C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\eCommerc.1EFE0F2B.Up2Date
-C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\Dapper.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\Npgsql.dll
+C:\Users\khald\source\repos\eCommerce.Solution.UserService\eCommerce.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

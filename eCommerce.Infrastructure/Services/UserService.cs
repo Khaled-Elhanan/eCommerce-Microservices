@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using eCommerce.Core.DTO;
 using eCommerce.Core.Entities;
 using eCommerce.Core.RepositoryContracts;
@@ -55,7 +55,7 @@ namespace eCommerce.Infrastructure.Services
             if (createdUser == null)
                 return null;
 
-            return _mapper.Map<AuthenticationResponse>(createdUser);
+            return _mapper.Map<AuthenticationResponse>(createdUser) with { Success = true, Token = "token" };
 
             //return new AuthenticationResponse(registeredUser.UserID, registeredUser.Email, registeredUser.PersonName, registeredUser.Gender,
             //    "Token", Success: true);

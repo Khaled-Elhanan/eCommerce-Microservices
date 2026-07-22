@@ -53,7 +53,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[16.2.0, )"
+              "version": "[13.0.1, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
