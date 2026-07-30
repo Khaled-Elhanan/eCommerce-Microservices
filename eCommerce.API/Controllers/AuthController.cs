@@ -1,5 +1,5 @@
 ﻿using eCommerce.Core.DTO;
-using eCommerce.Core.ServiceContracts;
+using eCommerce.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eCommerce.API.Controllers

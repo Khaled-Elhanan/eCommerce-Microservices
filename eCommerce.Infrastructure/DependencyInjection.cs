@@ -1,5 +1,5 @@
 using eCommerce.Core.RepositoryContracts;
-using eCommerce.Core.ServiceContracts;
+using eCommerce.Core.Services;
 using eCommerce.Infrastructure.DbContext;
 using eCommerce.Infrastructure.Repositories;
 using eCommerce.Infrastructure.Services;
@@ -12,7 +12,7 @@ namespace eCommerce.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
             services.AddTransient<IUserRepository, UserRepository>();
-            services.AddTransient<IUsersService, UserService>();
+          
 
             services.AddTransient<DapperDbContext>();
 

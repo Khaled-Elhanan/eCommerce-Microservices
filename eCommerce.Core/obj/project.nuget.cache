@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "r6kJ/TyO7ZQ=",
+  "dgSpecHash": "pRb8PN4+Q1M=",
   "success": true,
   "projectFilePath": "C:\\Users\\khald\\source\\repos\\eCommerce.Solution.UserService\\eCommerce.Core\\eCommerce.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khald\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\khald\\.nuget\\packages\\fluentvalidation\\11.12.0\\fluentvalidation.11.12.0.nupkg.sha512",
+    "C:\\Users\\khald\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.12.0\\fluentvalidation.dependencyinjectionextensions.11.12.0.nupkg.sha512",
     "C:\\Users\\khald\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.10\\microsoft.extensions.dependencyinjection.abstractions.10.0.10.nupkg.sha512",
     "C:\\Users\\khald\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\khald\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",

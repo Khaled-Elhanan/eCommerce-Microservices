@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "VMe/CTeHNx4=",
+  "dgSpecHash": "N5EkNVfPwCs=",
   "success": true,
   "projectFilePath": "C:\\Users\\khald\\source\\repos\\eCommerce.Solution.UserService\\eCommerce.API\\eCommerce.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khald\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\khald\\.nuget\\packages\\dapper\\2.1.79\\dapper.2.1.79.nupkg.sha512",
+    "C:\\Users\\khald\\.nuget\\packages\\fluentvalidation\\11.12.0\\fluentvalidation.11.12.0.nupkg.sha512",
+    "C:\\Users\\khald\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\khald\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.12.0\\fluentvalidation.dependencyinjectionextensions.11.12.0.nupkg.sha512",
     "C:\\Users\\khald\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.10\\microsoft.extensions.configuration.abstractions.10.0.10.nupkg.sha512",
     "C:\\Users\\khald\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.10\\microsoft.extensions.dependencyinjection.abstractions.10.0.10.nupkg.sha512",
     "C:\\Users\\khald\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
