@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="ProductsMicroService.API/ProductsMicroService.API.csproj" />
-  <Project Path="ProductsMicroService.Core/ProductsMicroService.Core.csproj" />
-  <Project Path="ProductsMicroService.Infrastructure/ProductsMicroService.Infrastructure.csproj" />
+  <Project Path="BusinessLogicLayer/BusinessLogicLayer.csproj" Id="dd1bfba4-18f1-4189-8875-36a120d8ac12" />
+  <Project Path="DataAccessLayer/DataAccessLayer.csproj" Id="4b439a2e-a422-4236-ba6a-a33f3932fdeb" />
+  <Project Path="ProductsMicroService.API_/ProductsMicroService.API.csproj" Id="9aaf2c30-05d6-49de-8624-24c6a4fa53fc" />
 </Solution>
