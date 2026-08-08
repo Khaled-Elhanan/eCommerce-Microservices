@@ -1,16 +1,12 @@
 ﻿using DataAccessLayer.Context;
 using DataAccessLayer.Entities;
 using DataAccessLayer.RepositoryContracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class ProductsRepository : IProductsRepository
+    public class ProductsRepository : IProductRepository
     {
         private readonly ApplicationDbContext _dbContext;
 
@@ -77,3 +73,4 @@ namespace DataAccessLayer.Repositories
             return existingProduct;
         }
     }
+}
