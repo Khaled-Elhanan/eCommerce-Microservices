@@ -1,10 +1,12 @@
 using DataAccessLayer;
 using BusinessLogicLayer;
 using FluentValidation.AspNetCore;
+using ProductsMicroService.API.Middlewares;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
-
-builder.Services.AddDataAccessLayer();
+builder.Services.AddDataAccessLayer(builder.Configuration);
 builder.Services.AddBusinessLogicLayer();
 
 
@@ -17,7 +19,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
+app.UseExceptionHandlingMiddleware();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
