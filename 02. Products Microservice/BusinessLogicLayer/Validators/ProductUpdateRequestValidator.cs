@@ -17,7 +17,7 @@ public class ProductUpdateRequestValidator : AbstractValidator<ProductUpdateRequ
 
     //Category
     RuleFor(temp => temp.Category)
-      .IsInEnum().WithMessage("Product Name can't be blank");
+      .IsInEnum().WithMessage("Category Name can't be blank");
 
     //UnitPrice
     RuleFor(temp => temp.UnitPrice)
