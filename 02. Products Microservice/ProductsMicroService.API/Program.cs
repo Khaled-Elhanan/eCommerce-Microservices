@@ -24,12 +24,25 @@ builder.Services.ConfigureHttpJsonOptions(options => options.SerializerOptions.C
 // Add Swagger 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://localhost:4200")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+
+});
 
 var app = builder.Build();
 
 app.UseExceptionHandlingMiddleware();
 app.UseRouting();
 
+
+// Cors
+app.UseCors();
 
 // Swagger 
 app.UseSwagger();
