@@ -1,34 +1,31 @@
-using DataAccessLayer;
 using BusinessLogicLayer;
+using DataAccessLayer;
 using FluentValidation.AspNetCore;
+using ProductsMicroService.API.APIEndpoints;
+using ProductsMicroService.API.Middleware;
+
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.AddDataAccessLayer(builder.Configuration);
 builder.Services.AddBusinessLogicLayer();
 
-
 builder.Services.AddControllers();
+
+//FluentValidations
 builder.Services.AddFluentValidationAutoValidation();
 
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseExceptionHandlingMiddleware();
+app.UseRouting();
 
-app.UseHttpsRedirection();
-
+//Auth
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapProductAPIEndpoints();
 
 app.Run();

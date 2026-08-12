@@ -17,7 +17,9 @@ public class ProductsService : IProductsService
   private readonly IProductRepository _productsRepository;
 
 
-  public ProductsService(IValidator<ProductAddRequest> productAddRequestValidator, IValidator<ProductUpdateRequest> productUpdateRequestValidator, IMapper mapper, IProductsRepository productsRepository)
+  public ProductsService(IValidator<ProductAddRequest> productAddRequestValidator, 
+      IValidator<ProductUpdateRequest> productUpdateRequestValidator, IMapper mapper, 
+      IProductRepository productsRepository)
   {
     _productAddRequestValidator = productAddRequestValidator;
     _productUpdateRequestValidator = productUpdateRequestValidator;
